@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(1, 13, 14);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: monospace;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 65px;
+    background-color: rgb(1, 24, 24);
+    color: white;
+    /* justify-content: center; */
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+nav ul li{
+    padding: 0 12px;
+    cursor: pointer;
+}
+.logo img{
+     width: 44px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.logo .head{
+    padding: 0 5px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem;
+}
+.card1:hover{
+    box-shadow: 0 8px 16px 0 whitesmoke;
+}
+.card2:hover{
+    box-shadow: 0 8px 16px 0 whitesmoke;
+}
+.card3:hover{
+    box-shadow: 0 8px 16px 0 whitesmoke;
+}
+.card4:hover{
+    box-shadow: 0 8px 16px 0 whitesmoke;
+}
+.card5:hover{
+    box-shadow: 0 8px 16px 0 whitesmoke;
+}
+.card6:hover{
+    box-shadow: 0 8px 16px 0 whitesmoke;
+}
+.card7:hover{
+    box-shadow: 0 8px 16px 0 whitesmoke;
+}
+.card8:hover{
+    box-shadow: 0 8px 16px 0 whitesmoke;
+}
+.card > div{
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    color: white;
+    background-color: rgb(2, 27, 37);
+    height: 22rem;
+    width: 15rem;
+    transition: 500ms;
+}
+.carrd div:hover,.active{
+    transform: scale(1.1);
+    filter: saturate(3);
+    /* background: #FFFFFF00; */
+    animation: dj .2s linear infinite;
+    box-shadow: 0 8px 16px 0 whitesmoke;
+    
+}
+@keyframes dj {
+    0%{
+        background-color: rgb(102, 131, 114);
+    }
+    100%{
+        background-color: (green,yellow)
+    }
+}
+.card div:hover img,.active img{
+    transform: scale(.9);
+}
+.bottom{
+    position: sticky;
+    height: 30%;
+    bottom: 0;
+    text-align: center;
+    color: rgb(2, 27, 37);
+}
+#progressbar{
+    width: 80vw;
+}
+.icons{
+    color: rgb(6, 73, 73);
+    height: 10px;
+    margin: 20px 0;
+    padding-bottom: 30px;
+}
+.icons i{
+    cursor: pointer;
+}
+audio{
+    position: relative;
+    top: 13%;
+    margin: 10px;
+    width: 14rem;
+}
+.card4 audio{
+    top: 9%;
+}
+.card img{
+    width: 15rem;
+    transition: 500ms;
+}
+span{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    font-size: 1.3em;
+    font-weight: 800;
+    color: rgb(12, 139, 139);
+    font-family: cursive;
+    font-variant: small-caps;
+}
+.card1 span{
+    margin-top: 2em;
+    text-align: center;
+}
+.card1 audio{
+    top: 11%;
+}
